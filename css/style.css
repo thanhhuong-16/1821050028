@@ -1,0 +1,366 @@
+
+body{
+    background: white;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 15px;
+}
+.container{
+    max-width: 65%;
+    margin: auto;
+}
+.header{
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #797c11;
+    box-shadow: 0px 5px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo img{
+    width: 250px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    padding-top: 0;
+    margin: 0;
+}
+.nav ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.nav p{
+    margin: 0px;
+}
+.header a{
+    text-decoration: none;
+    color:#8e7768;
+}
+.nav img{
+    padding-left: 20px;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 40%;
+}
+.cart img{
+    vertical-align: middle;
+    margin-bottom: 0;
+    width: 20%;
+    height: 30%;
+}
+.cart span{
+    line-height: 70px;
+    margin-left: 5px;
+}
+.cart a{
+    line-height: 30px;
+}
+.header a:hover{
+    color: #709d2f;  
+}
+@media only screen and (max-width:1400px){
+    .header{
+        height: 60px;
+        padding: 10px 0;
+    }
+    .nav ul li{
+        padding: 15px;
+    }
+    .nav img{
+        padding-left: 20px;
+        width: 35%;
+        height: 35%;
+    }
+    .nav p{
+        font-size: 13px;
+    }
+    body{
+        font-size: 13px;
+    }
+}
+/* banner */
+
+.firstBanner{
+    display: flex;
+    height: 420px;
+}
+.firstBanner img{
+    width: 90%;
+    height: 90%;
+}
+.firstBanner div{
+    flex: 25%;
+}
+/* secondBanner */
+.secondBanner{
+    position: relative;
+    height: 250px;
+}
+.bannerItem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+@media only screen and (max-width:1400px){
+    .firstBanner{
+        height: 50%;
+    }
+    .secondBanner{
+        height: 185px;
+    }
+    .bannerItem{
+        position: absolute;
+        bottom: 0%;
+    }
+}
+.parent-div{
+    width: 20%;
+    border: 10px solid #ddd;
+    position: relative;
+    box-shadow: 6px -6px 10px;
+}
+.parent-div img{
+    width:100%;
+    height: 100%;
+}
+.text{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+.text h3{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.text p{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    font-family: Arial;
+}
+.parent-div:hover .text{
+    opacity: 1;
+}
+@media only screen and (max-width:1400px){
+    .text p{
+        position: absolute;
+        top: 55%;
+        font-size: 80%;
+    }
+    .text h3{
+        position: absolute;
+        top: 35%;
+        font-size: 110%;
+    }
+}
+/* finalBanner */
+.bn-menuItem{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.bn-menuItem li{
+    list-style: none;
+    width: 25%;
+    padding: 20px 0;
+}
+.bn-menuItem a{
+    text-decoration: none;
+    color: #8e7768;
+}
+.bn-menuItem h3{
+    margin-top: 0;
+}
+.bn-menuItem img{
+    height: 40%;
+    margin: 0 15px;
+}
+.bn-menuItem a{
+    display: flex;
+}
+/* content */
+    /* sản phẩm */
+.firstProduct h2{
+    text-align: center;
+    color:#8e7768;
+}
+.firstProduct h2::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color:#709d2f;
+    margin: 10px auto 50px;
+}
+.productMenu{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    height: 350px;
+}
+.productItem{
+    width: 20%;
+    background-color: white;
+}
+.productItem h3{
+    text-align: center;
+    font-size: 16px;
+    color: #8e7768;
+}
+.productItem p{
+    color: red;
+    text-align: center;
+}
+.imgProduct img{
+    width: 100%; 
+    height: 100%;
+    object-fit: initial;
+}
+.imgProduct{
+    height: 75%;
+}
+.productItem:hover{
+    border: 1px solid;
+    box-shadow: 5px 5px 10px;
+}
+@media only screen and (max-width:1400px){
+    .productMenu{
+        height: 70%;
+    }
+    .imgProduct{
+        height: 70%;
+    }
+    .productItem h3{
+        font-size: 13px;
+    }
+    .productItem p{
+        margin-bottom: 2px;
+    }
+}
+/* tin tức */
+.blog h2{
+    text-align: center;
+    color: #8e7768;
+}
+.blog h2::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color:#709d2f;
+    margin: 10px auto 50px;
+}
+.blogMenu{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    height: 350px;
+}
+.blogItem{
+    width: 24%;
+    height: 350px;
+    background-color: white;
+}
+
+.blogItem h4{
+    font-size: 16px;
+    margin: 10px 5px;
+    color: #8e7768;
+}
+.blogItem p{
+    font-size: 13px;
+    margin: 10px 5px;
+    color: #282a2b;
+}
+.imgBlog img{
+    width: 100%; 
+    height: 100%;
+    object-fit: initial;
+    border: 2px solid #709d2f;
+}
+.imgBlog{
+    height: 60%;
+}
+.a{
+    height: 50px;
+    background-color: #f4f4f4;
+}
+@media only screen and (max-width:1400px){
+    .blogItem{
+        height: 300px;
+    }
+    .blogItem h4{
+        font-size: 13px;
+    }
+    .blogItem p{
+        font-size: 12px;
+    }
+    .imgBlog{
+        height: 65%;
+    }
+}
+/* footer */
+.footer{
+    border-top: 1px solid #709d2f;
+}
+.footerMenu{
+    display: flex;
+    justify-content: space-between;
+}
+.footerItem{
+    padding: 10px;
+}
+.footerItem ul{
+    padding-left: 0;
+}
+.footerItem li{
+    list-style: none;
+    padding: 10px;
+    color: #8e7768;
+}
+.footerItem a{
+    text-decoration: none;
+}
+.footerItem li:hover{
+    color: #709d2f; 
+}
+.footerLogo img{
+    width: 250px;
+}
+
+.footerEnd{
+    font-size: 12px;
+}
+.footerEnd a{
+    text-decoration: none;
+    color: #709d2f;
+}
+.footerEnd span{
+    color: #8e7768;
+}
+.footerEnd::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #709d2f;
+    margin: 10px auto 20px;
+}
